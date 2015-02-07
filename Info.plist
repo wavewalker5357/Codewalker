@@ -7,20 +7,20 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>HTML 5 Animation</string>
+	<string>Codewalker</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.tumult.hype.widget</string>
+	<string>com.apple.widget.Codewalker</string>
 	<key>CFBundleName</key>
 	<string>Animation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>Height</key>
-	<integer>800</integer>
 	<key>MainHTML</key>
 	<string>index.html</string>
-	<key>Width</key>
-	<integer>800</integer>
+	<key>Height</key>
+   	<integer>800</integer>
+        <key>Width</key>
+        <integer>768</integer>
 </dict>
 </plist>
