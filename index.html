@@ -18,16 +18,16 @@
 
         <div class="well codeblock showprocessed">
             <pre class="prettyprint linenums interface window">
-<sequence data-id="1" repeat="1"><variable data-name="x" data-repeat="1">0</variable>// Get output from cycle, where the word "Gambit" is printed letter by letter until the end.
-superhero = <popover data-content="Toto je hodnota proměnné superhero.">"Gambit"</popover></sequence><variable data-name="x" data-repeat="5">0</variable>
-    <sequence data-id="2" repeat="6"> <!-- 3.řádek -->superhero.<popover data-content="Length spoočítá délku proměnné a times ji tolikrát zopakuje.">length.times</popover> do |x| <console data-repeat="1" data-content=""></console><console data-repeat="2" data-content="0"></console><console data-repeat="3" data-content="0 1"></console><console data-repeat="4" data-content="0 1 2"></console><console data-repeat="5" data-content="0 1 2 3"></console><console data-repeat="6" data-content="0 1 2 3 4"></console><!-- konec 3.řádek -->
-        <!-- 4.řádek -->print x <console data-repeat="1" data-content="0 "></console><console data-repeat="2" data-content="0 1"></console><console data-repeat="3" data-content="0 1 2"></console><console data-repeat="4" data-content="0 1 2 3"></console><console data-repeat="5" data-content="0 1 2 3 4"></console><console data-repeat="6" data-content="0 1 2 3 4 5"></console>
-        <variable data-name="x" data-repeat="0">0</variable><variable data-name="x" data-repeat="1">0</variable><variable data-name="x" data-repeat="2">1</variable><variable data-name="x" data-repeat="3">2</variable><variable data-name="x" data-repeat="4">3</variable><variable data-name="x" data-repeat="5">4</variable><variable data-name="x" data-repeat="6">5</variable><!-- konec 4.řádek --><!-- 5.řádek --><popover data-content="Vytiskne mezeru pokud je hodnota x menší než délka slova Gambit (6 - 1 = 5).">print " " if x &lt; superhero.length -1</popover> <console data-repeat="1" data-content="0 "></console><console data-repeat="2" data-content="0 1"></console><console data-repeat="3" data-content="0 1 2"></console><console data-repeat="4" data-content="0 1 2 3"></console><console data-repeat="5" data-content="0 1 2 3 4"></console><console data-repeat="6" data-content="0 1 2 3 4 5"></console> <!-- konec 5.řádek --> </sequence>
+<sequence data-id="1" repeat="1">## Get output from cycle, where the word "Gambit" is printed letter by letter until the end.<variable data-name="superhero" data-repeat="0">null</variable><variable data-name="superhero" data-repeat="1">null</variable>
+superhero = <popover data-content="Toto je hodnota proměnné superhero.">"Gambit"</popover></sequence><variable data-name="superhero" data-repeat="1">"Gambit"</variable><variable data-name="superhero" data-repeat="2">"Gambit"</variable><variable data-name="superhero" data-repeat="3">"Gambit"</variable><variable data-name="superhero" data-repeat="4">"Gambit"</variable><variable data-name="superhero" data-repeat="5">"Gambit"</variable><variable data-name="superhero" data-repeat="6">"Gambit"</variable>
+<sequence data-id="2" repeat="6"> <!-- 3.řádek -->superhero.<popover data-content="Length spoočítá délku proměnné a times ji tolikrát zopakuje.">length.times</popover> do |x| <console data-repeat="1" data-content=""></console><console data-repeat="2" data-content="0"></console><console data-repeat="3" data-content="0 1"></console><console data-repeat="4" data-content="0 1 2"></console><console data-repeat="5" data-content="0 1 2 3"></console><console data-repeat="6" data-content="0 1 2 3 4"></console><!-- konec 3.řádek --><variable data-name="x" data-repeat="0">0</variable><variable data-name="x" data-repeat="1">0</variable><variable data-name="x" data-repeat="2">1</variable><variable data-name="x" data-repeat="3">2</variable><variable data-name="x" data-repeat="4">3</variable><variable data-name="x" data-repeat="5">4</variable><variable data-name="x" data-repeat="6">5</variable>
+<!-- 4.řádek -->print x <console data-repeat="1" data-content="0 "></console><console data-repeat="2" data-content="0 1"></console><console data-repeat="3" data-content="0 1 2"></console><console data-repeat="4" data-content="0 1 2 3"></console><console data-repeat="5" data-content="0 1 2 3 4"></console><console data-repeat="6" data-content="0 1 2 3 4 5"></console>
+<!-- konec 4.řádek --><!-- 5.řádek --><popover data-content="Vytiskne mezeru pokud je hodnota x menší než délka slova Gambit (6 - 1 = 5).">print " " if x &lt; superhero.length-1</popover> <console data-repeat="1" data-content="0 "></console><console data-repeat="2" data-content="0 1"></console><console data-repeat="3" data-content="0 1 2"></console><console data-repeat="4" data-content="0 1 2 3"></console><console data-repeat="5" data-content="0 1 2 3 4"></console><console data-repeat="6" data-content="0 1 2 3 4 5"></console> <!-- konec 5.řádek --> </sequence>
 end <console data-repeat="1" data-content="0 1 2 3 4 5"></console>
 </pre>
 
-
-
+            
+            
             <div class="navbar interface toolbar">
                 <a href="/" class="prev btn btn-link pull-left"><i class="icon-step-backward icon-2x"></i></a>
                 <a href="/" class="play-all btn btn-link"><i class="icon-play icon-4x"></i></a>
@@ -36,14 +36,14 @@ end <console data-repeat="1" data-content="0 1 2 3 4 5"></console>
                 <!-- <a href="/" class="clear btn btn-danger">Clear</a> -->
                 <!-- <div class="btn btn-default"><span class="curr">0</span> / <span class="total">0</span></div> -->
             </div>
-
+            
             <div class="row info interface statusbar">
                 <div class="col-lg-8 col-xs-8">
                     <pre class="console"></pre>
                 </div>
                 <div class="col-lg-4 col-xs-4">
                     <pre class="variables"></pre>
-                </div>
+                </div>                
             </div>
 
         </div>
